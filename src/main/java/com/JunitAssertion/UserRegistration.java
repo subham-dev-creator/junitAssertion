@@ -13,7 +13,7 @@ public class UserRegistration {
     }
 
     boolean emailValidation(String s){
-        String pattern = "\\b[A-Z0-9._%-]+@[A-Z0-9.-]+\\.[A-Z]{2,4}\\b";
+        String pattern = "^[\\w!#$%&'*+/=?`{|}~^-]+(?:\\.[\\w!#$%&'*+/=?`{|}~^-]+)*@(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,6}$";
         Pattern p = Pattern.compile(pattern, Pattern.CASE_INSENSITIVE);
         Matcher m = p.matcher(s);
 
