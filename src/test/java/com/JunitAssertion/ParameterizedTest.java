@@ -1,8 +1,7 @@
 package com.JunitAssertion;
 
 import static org.junit.Assert.*;
-import java.util.Arrays;
-import java.util.Collection;
+import java.util.*;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -19,6 +18,7 @@ public class ParameterizedTest {
     public void initialize(){
         obj = new sampleCheck();
     }
+
     public ParameterizedTest(String email, Boolean result)
     {
         this.inputEmail = email;
