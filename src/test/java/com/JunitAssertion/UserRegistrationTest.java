@@ -11,7 +11,7 @@ public class UserRegistrationTest {
     public void InvalidFirstNameTest(){
         UserRegistration obj = new UserRegistration();
         try {
-            assertTrue(obj.flNameValidation("subhabdh"));
+            assertTrue(obj.fNameValidation("subhabdh"));
             System.out.println("Valid First Name");
         } catch (UserRegistrationException e) {
             System.out.println(e.getMessage());
@@ -23,7 +23,7 @@ public class UserRegistrationTest {
     public void validFirstNameTest(){
         UserRegistration obj = new UserRegistration();
         try {
-            assertTrue(obj.flNameValidation("Subhabdh"));
+            assertTrue(obj.lNameValidation("Subhabdh"));
             System.out.println("Valid First Name");
         } catch (UserRegistrationException e) {
             System.out.println(e.getMessage());
@@ -35,7 +35,7 @@ public class UserRegistrationTest {
     public void ValidLastname(){
         UserRegistration obj = new UserRegistration();
         try {
-            assertTrue(obj.flNameValidation("Kumar"));
+            assertTrue(obj.fNameValidation("Kumar"));
             System.out.println("Valid Last Name");
         } catch (UserRegistrationException e) {
             System.out.println(e.getMessage());
@@ -47,7 +47,7 @@ public class UserRegistrationTest {
     public void InvalidLastname(){
         UserRegistration obj = new UserRegistration();
         try {
-            assertTrue(obj.flNameValidation("kumar"));
+            assertTrue(obj.fNameValidation("kumar"));
             System.out.println("Valid Last Name");
         } catch (UserRegistrationException e) {
             System.out.println(e.getMessage());
